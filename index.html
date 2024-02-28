@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+
+    <title>Proyecto</title>
+</head>
+<body>
+    <h1>Validar CURP o RFC</h1>
+    
+    <div class="container">
+        <div class="box-er">
+            <label for="cadenaInput2">Ingrese la expresion regular, ejemplo:'PEMJ'</label>
+            <div class="wrapper_input">
+                <input type="text" id="cadenaInput2" >
+                <button onclick="validarYMostrarER()">Evaluar expresion regular</button>
+            </div>
+            
+            <p id="resultado2"></p>
+            <p style="color: rgb(0, 0, 0);" id="error"></p>
+        </div>
+    </div>
+
+    <script type="module">
+        import { validarYMostrarER } from "./main.js";
+
+        window.validarYMostrarER = validarYMostrarER;
+    </script>
+</body>
+</html>
